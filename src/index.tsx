@@ -126,7 +126,23 @@ function TodoList({ todos }: { todos: Todo[] }) {
 }
 
 function TodoForm() {
-  const todoItems = ["Deploy website to Fly.io", "Prepare for interviews", "", "Learn htmx"];
+  const todoItems = [
+    "Deploy website to Fly.io",
+    "Prepare for interviews",
+    "",
+    "Learn htmx",
+    "Buy groceries",
+    "Clean the house",
+    "Walk the dog",
+    "Finish project for work",
+    "Call mom",
+    "Read a book",
+    "Go for a run",
+    "Watch a movie",
+    "Learn a new skill",
+    "Plan a vacation",
+    "Organize closet",
+  ]
 
   return (
     <form
