@@ -126,6 +126,8 @@ function TodoList({ todos }: { todos: Todo[] }) {
 }
 
 function TodoForm() {
+  const todoItems = ["Deploy website to Fly.io", "Prepare for interviews", "", "Learn htmx"];
+
   return (
     <form
       class="flex flex-row space-x-3"
@@ -133,7 +135,11 @@ function TodoForm() {
       hx-swap="beforebegin"
       _="on submit target.reset()"
     >
-      <input type="text" name="content" class="border border-black" />
+      <select class="border border-black" name="content">
+        {todoItems.map((item) => (
+          <option value={item}>{item}</option>
+        ))}
+      </select>
       <button type="submit">Add</button>
     </form>
   );
