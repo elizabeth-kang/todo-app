@@ -129,7 +129,6 @@ function TodoForm() {
   const todoItems = [
     "Deploy website to Fly.io",
     "Prepare for interviews",
-    "",
     "Learn htmx",
     "Buy groceries",
     "Clean the house",
